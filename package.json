@@ -1,0 +1,61 @@
+{
+  "name": "create-yu",
+  "version": "0.0.3",
+  "author": "yu <381740310@qq.com> (https://github.com/zhengyuzi)",
+  "description": "自用的前端模板脚手架 Self-used front-end template scaffolding",
+  "keywords": [
+    "scaffolding",
+    "front-end"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zhengyuzi/create-yu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhengyuzi/create-yu"
+  },
+  "bugs": {
+    "url": "https://github.com/zhengyuzi/create-yu/issues"
+  },
+  "type": "module",
+  "bin": {
+    "create-yu": "index.js"
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepare": "simple-git-hooks"
+  },
+  "files": [
+    "README.md",
+    "package.json",
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.5",
+    "@types/minimist": "^1.2.5",
+    "@types/prompts": "^2.4.8",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "lint-staged": "^15.1.0",
+    "simple-git-hooks": "^2.9.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
