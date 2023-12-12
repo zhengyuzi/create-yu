@@ -2,11 +2,7 @@
   "name": "create-yu",
   "version": "0.0.3",
   "author": "yu <381740310@qq.com> (https://github.com/zhengyuzi)",
-  "description": "自用的前端模板脚手架 Self-used front-end template scaffolding",
-  "keywords": [
-    "scaffolding",
-    "front-end"
-  ],
+  "description": "Scaffolding my front-end project",
   "license": "MIT",
   "homepage": "https://github.com/zhengyuzi/create-yu",
   "repository": {
