@@ -17,4 +17,4 @@ pnpm create yu [project-name] --template [template-name]
 
 ## Template List:
 
-None
+- vue-a (Vue3 + TypeScript + Vite + VueRouter + UnoCss + VueUse + Axios)
